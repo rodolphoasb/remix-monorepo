@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { RPC } from "@zenvios/api";
+import { RPC } from "@boiler/api";
 
 export const meta: MetaFunction = () => {
   return [

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "turbo run dev",
+    "dev": "pnpm run dev",
     "build": "vite build",
     "type-check": "tsc"
   },
@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@8.15.5",
-  "name": "zenvios",
+  "name": "boiler",
   "workspaces": [
     "apps/*",
     "packages/*"

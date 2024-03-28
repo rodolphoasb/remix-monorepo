@@ -1,19 +1,15 @@
 {
   "compilerOptions": {
     "strict": true,
-    "target": "ES2021",
+    "target": "ES2022",
     "module": "ES2022",
-    "lib": ["ES2021"],
     "baseUrl": ".",
     "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
+    "jsxImportSource": "hono/jsx"
   },
   "include": ["src"]
 }

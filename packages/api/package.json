@@ -1,5 +1,5 @@
 {
-  "name": "@zenvios/api",
+  "name": "@boiler/api",
   "version": "1.0.0",
   "type": "module",
   "main": "./src/client.ts",

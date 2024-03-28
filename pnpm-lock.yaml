@@ -17,6 +17,9 @@ importers:
 
   apps/app:
     dependencies:
+      '@boiler/api':
+        specifier: workspace:*
+        version: link:../../packages/api
       '@remix-run/node':
         specifier: ^2.8.1
         version: 2.8.1(typescript@5.4.3)
@@ -26,9 +29,6 @@ importers:
       '@remix-run/serve':
         specifier: ^2.8.1
         version: 2.8.1(typescript@5.4.3)
-      '@zenvios/api':
-        specifier: workspace:*
-        version: link:../../packages/api
       isbot:
         specifier: ^4.1.0
         version: 4.4.0
