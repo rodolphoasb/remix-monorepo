@@ -1,10 +1,26 @@
 {
   "name": "@zenvios/api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/client.ts",
+  "types": "./build/types/client.d.ts",
+  "exports": {
+    ".": {
+      "require": "./build/client.cjs",
+      "import": "./build/client.esm.js",
+      "types": "./build/types/client.d.ts"
+    }
+  },
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "build": "run-p build:*",
+    "build:cjs": "esbuild ./src/client.ts --bundle --format=cjs --platform=neutral --outfile=build/client.cjs",
+    "build:esm": "esbuild ./src/client.ts --bundle --format=esm --platform=neutral --outfile=build/client.esm.js",
+    "build:types": "tsc -P ./tsconfig.build.json --emitDeclarationOnly"
   },
   "dependencies": {
     "bun-types": "^1.0.35",
-    "hono": "^4.1.5"
+    "hono": "4.1.5",
+    "typescript": "^5.4.3"
   }
 }

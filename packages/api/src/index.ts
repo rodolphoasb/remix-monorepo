@@ -1,9 +1,6 @@
-import { Hono } from 'hono'
+import { Hono } from "hono";
+import { v1_0 } from "./routes/v1.0";
 
-const app = new Hono()
+const app = new Hono().route("/v1.0", v1_0);
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
-
-export default app
+export default app;
